@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import {
   getComments as getCommentsApi,
   addComment as addCommentApi,
@@ -7,15 +7,20 @@ import {
 } from '../../api';
 import Comment from '../Comment/Comment';
 import CommentForm from '../CommentForm/CommentForm';
-import {CommentFormTitle, CommentsContainer, CommentsTitle, CommentsWrap} from './styled';
+import {CommentFormTitle, CommentsContainer, CommentsTitle, CommentsWrap, LoaderText} from './styled';
 
 const Comments = ({currentUserId}) => {
   const [comments, setComments] = useState([]);
   const [activeComment, setActiveComment] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
   const rootComments = comments.filter(comment => comment.parentId === null);
 
-  useEffect(() => {
-    getCommentsApi().then(({data}) => setComments(data));
+  useLayoutEffect(() => {
+    setIsLoading(true);
+    getCommentsApi()
+      .then(({data}) => setComments(data))
+      .catch(e => alert(e.message))
+      .finally(() => setIsLoading(false));
   }, []);
 
   const getReplies = id => {
@@ -63,27 +68,35 @@ const Comments = ({currentUserId}) => {
   return (
     <CommentsWrap>
       <CommentsTitle>Comments</CommentsTitle>
-      <CommentsContainer>
-        {rootComments.map(item => (
-          <Comment
-            key={item.id}
-            comment={item}
-            replies={getReplies(item.id)}
-            currentUserId={currentUserId}
-            deleteComment={handleDeleteComment}
-            activeComment={activeComment}
-            setActiveComment={setActiveComment}
-            addComment={addComment}
-            updateComment={handleUpdateComment}
-          />
-        ))}
-      </CommentsContainer>
+      {
+        isLoading
+          ? <LoaderText>Loading comments. Please wait...</LoaderText>
+          : (
+            <>
+              <CommentsContainer>
+                {rootComments.map(item => (
+                  <Comment
+                    key={item.id}
+                    comment={item}
+                    replies={getReplies(item.id)}
+                    currentUserId={currentUserId}
+                    deleteComment={handleDeleteComment}
+                    activeComment={activeComment}
+                    setActiveComment={setActiveComment}
+                    addComment={addComment}
+                    updateComment={handleUpdateComment}
+                  />
+                ))}
+              </CommentsContainer>
 
-      <CommentFormTitle>Add a comment</CommentFormTitle>
-      <CommentForm
-        submitLabel={'Add comment'}
-        handleSubmit={addComment}
-      />
+              <CommentFormTitle>Add a comment</CommentFormTitle>
+              <CommentForm
+                submitLabel={'Add comment'}
+                handleSubmit={addComment}
+              />
+            </>
+          )
+      }
     </CommentsWrap>
   );
 };

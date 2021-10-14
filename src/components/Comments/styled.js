@@ -17,3 +17,9 @@ export const CommentsContainer = styled.div`
 export const CommentFormTitle = styled.div`
   font-size: 22px;
 `;
+
+export const LoaderText = styled.div`
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+`

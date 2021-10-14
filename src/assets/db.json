@@ -33,148 +33,28 @@
       "createdAt": "2021-10-12T23:00:33.010+02:00"
     },
     {
-      "body": "adasdasdasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T00:35:47.561Z",
-      "id": "DYjYXZD"
-    },
-    {
-      "body": "dddd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T00:35:50.224Z",
-      "id": "xRmrSu4"
-    },
-    {
       "body": "New comment",
       "parentId": null,
       "userId": "1",
       "username": "John",
-      "createdAt": "2021-10-13T00:51:25.884Z",
-      "id": "adIKKKj"
+      "createdAt": "2021-10-14T00:58:53.657Z",
+      "id": "2Pi1cmR"
     },
     {
-      "body": "asdasdasdasdasdasd",
-      "parentId": "1",
+      "body": "Reply on New comment",
+      "parentId": "2Pi1cmR",
       "userId": "1",
       "username": "John",
-      "createdAt": "2021-10-13T02:01:06.125Z",
-      "id": "BKAjrr1"
+      "createdAt": "2021-10-14T00:59:03.410Z",
+      "id": "YbrXN_C"
     },
     {
-      "body": "dd",
-      "parentId": "1",
+      "body": "Reply 3",
+      "parentId": "2Pi1cmR",
       "userId": "1",
       "username": "John",
-      "createdAt": "2021-10-13T02:01:11.316Z",
-      "id": "XugNijY"
-    },
-    {
-      "body": "New comment updated 2",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:03:04.231Z",
-      "id": "rKf6kT7"
-    },
-    {
-      "body": "sadasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:26:07.934Z",
-      "id": "GRwQdcQ"
-    },
-    {
-      "body": "sadasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:26:26.344Z",
-      "id": "6xU_B2s"
-    },
-    {
-      "body": "dddd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:26:30.536Z",
-      "id": "RFAbvY4"
-    },
-    {
-      "body": "d",
-      "parentId": "1",
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:37:39.545Z",
-      "id": "mliWA4z"
-    },
-    {
-      "body": "asdasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:40:27.733Z",
-      "id": "TZRNFJi"
-    },
-    {
-      "body": "reply",
-      "parentId": "5--zmfr",
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:43:00.977Z",
-      "id": "BBOLgtz"
-    },
-    {
-      "body": "reply2",
-      "parentId": "5--zmfr",
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:43:08.538Z",
-      "id": "AvkI4ib"
-    },
-    {
-      "body": "reply3",
-      "parentId": "5--zmfr",
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:43:15.698Z",
-      "id": "R4yitEz"
-    },
-    {
-      "body": "asdasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:46:23.342Z",
-      "id": "Ofm2raK"
-    },
-    {
-      "body": "test deleting",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:46:33.175Z",
-      "id": "idbu3BC"
-    },
-    {
-      "body": "asdasd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:46:43.903Z",
-      "id": "uWZgv3T"
-    },
-    {
-      "body": "ddddd",
-      "parentId": null,
-      "userId": "1",
-      "username": "John",
-      "createdAt": "2021-10-13T21:46:46.463Z",
-      "id": "8wBDVFb"
+      "createdAt": "2021-10-14T00:59:08.417Z",
+      "id": "XzK-1V8"
     }
   ]
 }
